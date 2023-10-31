@@ -1,107 +1,24 @@
-
-<!DOCTYPE html>
 <html>
-  <head>
-    <title>Trang chủ - Xe hay</title>
-    <style>
-      /* Định dạng phần header */
-      header {
-        background-color: #fff;
-        height: 80px;
-        border-bottom: 1px solid #ccc;
-      }
-
-      header h1 {
-        margin: 0;
-        font-size: 36px;
-      }
-
-      header p {
-        margin: 0;
-        font-size: 18px;
-      }
-
-      /* Định dạng phần menu */
-      nav {
-        background-color: #333;
-        height: 50px;
-        color: #fff;
-      }
-
-      nav ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-      }
-
-      nav li {
-        display: inline-block;
-        margin-right: 20px;
-      }
-
-      nav li:last-child {
-        margin-right: 0;
-      }
-
-      nav a {
-        display: block;
-        padding: 10px;
-        color: #fff;
-        text-decoration: none;
-      }
-
-      nav a:hover {
-        background-color: #666;
-      }
-
-      /* Định dạng phần nội dung chính */
-      main {
-        background-color: #f2f2f2;
-        padding: 20px;
-      }
-
-      main h2 {
-        margin-top: 0;
-        font-size: 24px;
-      }
-
-      main p {
-        font-size: 18px;
-        line-height: 1.5;
-      }
-
-      main img {
-        display: block;
-        margin-top: 20px;
-        max-width: 100%;
-      }
-
-      /* Định dạng phần footer */
-      footer {
-        background-color: #333;
-        color: #fff;
-        text-align: center;
-        padding: 20px;
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <h1>Xe hay</h1>
-      <p>Xe máy chất lượng cao</p>
-    </header>
-    <nav>
-      <ul>
-        <li><a href="#">Xe máy</a></li>
-        <li><a href="#">Xe thể thao</a></li>
-        <li><a href="#">Phụ kiện</a></li>
-        <li><a href="#">Tin tức</a></li>
-        <li><a href="#">Liên hệ</a></li>
-      </ul>
-    </nav>
-    <main>
-      <h2>Xe máy chất lượng cao</h2>
-      <p>Ở đây cung cấp cho bạn mọi thứ về xe máy. Chúng tôi cam kết cung cấp những sản phẩm chất lượng cao với giá cả hợp lý.</p>
-      <img src="logoxehay.jpg"width="50%" height="10%" alt="icon"></p>
-    </main>
-   
+<head>
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            document.querySelector('#red').onclick = function(){
+                document.querySelector('#hello').style.color = 'red';
+            };
+            document.querySelector('#yellow').onclick = function(){
+                document.querySelector('#hello').style.color = 'yellow';
+            };
+            document.querySelector('#green').onclick = function(){
+                document.querySelector('#hello').style.color = 'green';
+            };
+        };
+        </script>
+        <title>My website</title>
+</head>
+<body>
+<h1 style="color: blue;" id="hello">Hello!</h1>
+    <button id="red">Red</button>
+    <button id="yellow">yellow</button>
+    <button id="green">Green</button>
+</body>
+</html>
