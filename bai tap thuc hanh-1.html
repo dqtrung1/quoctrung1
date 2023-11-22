@@ -5,11 +5,19 @@
     <title></title>
   </head>
   <body>
-    <h3>QUIT THE GAME?</h3>
-    <form action="8-ifResult.php" method="get">
-      <select name="response">
-        <option value="yes">YES</option>
-        <option value="no">NO</option>
+   <?php
+   // befor if statement
+           echo "THE GAME ";
+           if ($_GET["responese"] == "yes")
+           {
+            echo "HAS BEEN QUITED";
+           }
+           if ($_GET["responese"] == "no")
+           {
+            echo "WILL BE CONTINUED IN 3 SECONDS";
+           }
+           echo "<br>AFTER IF STATMENT";
+    ?>
       </select>
     </form>
   </body>
