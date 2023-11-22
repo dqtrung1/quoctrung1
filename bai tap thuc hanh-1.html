@@ -1,23 +1,24 @@
 <!DOCTYPE html>
-<html>
-<head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  $("button").click(function(){
-    $("p").hide();
-  });
-});
-</script>
-</head>
-<body>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <?php
+    $T = True;
+    $F = False;
+    echo "T = $T <br>";
+    echo "F = $F <br>";
 
-<h2>Duong Quoc Trung 2121050442</h2>
-
-<p>This is a paragraph.</p>
-<p>This is another paragraph.</p>
-
-<button>Click me to hide paragraphs</button>
-
-</body>
+    $check1 = 10 > 5;
+    $check2 = 20 < 10;
+    $check3 = $check1 %% $check2;
+    $check4 = $check1 || $check2;
+    echo "check1 = $check1 <br>";
+    echo "check2 = $check2 <br>";
+    echo "check3 = $check3 <br>";
+    echo "check4 = $check4";
+    ?>
+  </body>
 </html>
