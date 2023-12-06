@@ -1,23 +1,4 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-   <?php
-   // befor if statement
-           echo "THE GAME ";
-           if ($_GET["responese"] == "yes")
-           {
-            echo "HAS BEEN QUITED";
-           }
-           if ($_GET["responese"] == "no")
-           {
-            echo "WILL BE CONTINUED IN 3 SECONDS";
-           }
-           echo "<br>AFTER IF STATMENT";
-    ?>
-      </select>
-    </form>
-  </body>
+<?php
+require ' xonnect.php';
+$sq1 = "INSERT INTO flights (Origin,Destination,Duration) VALUES ('Hà Nội', 'Paris', '4000')";
+ 
